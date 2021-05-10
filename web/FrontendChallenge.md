@@ -83,8 +83,9 @@ There are three types of notification items, each one needs to be represented in
 - Display some data in a nice way (eg. the dates should be formatted, show the users in the notifications by name)
 - As an Admin user I can see filter options for my notifications (filter by notification type is enough)
 
-## 
+## Bonus
 - Treat errors when possible and display custom messages for empty results.
 - Test the code
 - Ability to save selected notifications and display them in another window (persist between sessions)
+- Lazy load images
 
