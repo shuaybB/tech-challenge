@@ -76,6 +76,17 @@ There are three types of notification items, each one needs to be represented in
 |List users         | /GET  |`https://7ktgzkl5ce.execute-api.us-east-1.amazonaws.com/prod/users`
 
 
+# API Key
+
+Please reach out to get your API Key.
+
+The API Key header uses the key: x-api-key
+
+### Sample curl request 
+```
+curl -X GET -H "x-api-key: API_KEY" -H "Content-Type: application/json" -d '{"key":"val"}' https://7ktgzkl5ce.execute-api.us-east-1.amazonaws.com/prod/users
+```
+
 ## Minimum requirements
 - We should be able to select which user we're logged in to.
 - Fetch notifications from API using the Bearer Authentication token Header.
