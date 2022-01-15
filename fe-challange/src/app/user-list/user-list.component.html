@@ -1,0 +1,4 @@
+<h2>users: </h2>
+<li *ngFor="let user of Users" (click)="setUser(user.id)">
+  {{user.name}}
+</li>
