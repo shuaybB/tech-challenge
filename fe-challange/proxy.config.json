@@ -1,0 +1,11 @@
+{
+    "/api/*":{
+        "target":"https://7ktgzkl5ce.execute-api.us-east-1.amazonaws.com/prod",
+        "secure":false,
+        "changeOrigin": true,
+        "logLevel":"debug",
+        "pathRewrite": {
+            "^/api": ""
+        }
+    }
+}
