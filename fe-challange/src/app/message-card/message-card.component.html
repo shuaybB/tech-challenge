@@ -1,10 +1,12 @@
 <div class="MsgCard">
-    <div>
-        <p>From User: {{Message.senderName}}</p>
+    <div class="msgTitle">
+        <p>{{Message.senderName}}</p>
         <p>{{Message.date | date}}</p>
     </div>
     <p>{{Message.message}}</p>
-    <img *ngIf="Message.image != null" src="{{Message.image}}" alt="">
+    <div class="msgImg">
+        <img *ngIf="Message.image != null" src="{{Message.image}}" alt="">
+    </div>
 </div>
 
 <!-- 

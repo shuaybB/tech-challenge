@@ -1,7 +1,21 @@
 <div class="ConCard">
-    <p>Sender: {{Contract.senderName}}</p>
-    <p>Receiver: {{Contract.receiverName}}</p>
-    <p>Exp Date: {{Contract.expiration_date | date}}</p>
+
+    <div>
+        <p>From: </p>
+        <p>  {{Contract.senderName}}</p>
+
+    </div>
+    <div>
+        <p>To: </p>
+        <p>   {{Contract.receiverName}}</p>
+
+    </div>
+
+    <div>
+        <p>Exp date: </p>
+        <p>  {{Contract.expiration_date | date}}</p>
+
+    </div>
 
 </div>
 

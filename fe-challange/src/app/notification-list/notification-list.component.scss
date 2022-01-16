@@ -1,18 +1,70 @@
-
-.outerContainer {
-
-}
-.sideNav{
-    width: 20%;
-    height: 100vh;
-    margin-right: 30px;
-    background-color: white;
-    position: fixed;
-   float: left;
+.container {
+    width: 90%;
+    margin: auto;
+   
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap ;
 }
 
-.dashboardWindow{
-    width: 75%;
-    overflow: scroll;
+select {
+    width: 200px;
+    height: 30px;
+
+}
+
+.filterContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+ 
+}
+
+.msgContainer {
     display: inline-block;
+}
+.conProdContainer {
+    display: inline-block;
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .msgContainer {
+        max-width: 100%;
+    }
+    .conProdContainer {
+        max-width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .msgContainer {
+        max-width: 100%;
+    }
+    .conProdContainer {
+        max-width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .msgContainer {
+        max-width: 70%;
+    }
+    .conProdContainer {
+        max-width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .msgContainer {
+        max-width: 50%;
+    }
+    .conProdContainer {
+        max-width: 50%;
+    }
 }

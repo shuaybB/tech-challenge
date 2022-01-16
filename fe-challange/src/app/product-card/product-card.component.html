@@ -1,8 +1,17 @@
 <div class="PrdCard">
-    <p>Product #: {{Product.product_id}}</p>
-    <p>Vehicle: {{Product.product_type}}</p>
-    <p>VIN: {{Product.vin}}</p>
-    <p>Date: {{Product.created_at | date}}</p>
+    <p class="vehicle">{{Product.product_type}}</p>
+    <p style="font-weight: bold;">Specifications</p>
+            <p>{{Product.product_id}}</p>
+    
+    <div>
+        <p style="font-weight: bold;">VIN </p>
+        <p>{{Product.vin}}</p>
+
+    </div>
+    <div>
+        <p style="font-weight: bold;"> Added on </p>
+        <p> {{Product.created_at | date}}</p>
+    </div>
 </div>
 
 <!-- export interface Product {
