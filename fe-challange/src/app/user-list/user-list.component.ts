@@ -13,6 +13,8 @@ export class UserListComponent implements OnInit {
 
   Users: User[]
   constructor(private apiservice: ApiService, private router: Router, private route: ActivatedRoute){ }
+
+  //set the user token based on the ID selected then route to the navigation screen
   setUser(id:number){
     if (id != null) {
       switch(id){
@@ -33,7 +35,9 @@ export class UserListComponent implements OnInit {
     }
   }
 
+  
   ngOnInit():void{
+    //fetch list of users from API
     this.apiservice.getUsersList().subscribe(data => {
       this.Users = data
     }, err => {
