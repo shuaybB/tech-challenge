@@ -1,0 +1,16 @@
+<div class="MsgCard">
+    <div>
+        <p>From User: {{Message.senderName}}</p>
+        <p>{{Message.date | date}}</p>
+    </div>
+    <p>{{Message.message}}</p>
+    <img *ngIf="Message.image != null" src="{{Message.image}}" alt="">
+</div>
+
+<!-- 
+notification_type: string
+notification_id: number
+from: number
+date: string
+image?: string // optional
+message: string -->

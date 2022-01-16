@@ -4,4 +4,7 @@ export interface Contract {
     sender: number
     receiver: number
     expiration_date: string 
+    senderName?: string
+    receiverName?: string
+
 }

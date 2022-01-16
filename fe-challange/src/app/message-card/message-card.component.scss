@@ -1,0 +1,19 @@
+.MsgCard {
+    display: flexbox;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    border: 1px solid rgb(177, 177, 177);
+    margin: 15px;
+    padding: 15px;
+    img {
+        width: 25%;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+        p {
+            display: inline-block;
+           
+        }
+    }
+}

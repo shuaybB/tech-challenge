@@ -6,5 +6,5 @@ export interface Message {
         date: string
         image?: string // optional
         message: string
-    
+        senderName?:string
 }

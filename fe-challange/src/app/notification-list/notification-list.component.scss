@@ -1,0 +1,18 @@
+
+.outerContainer {
+
+}
+.sideNav{
+    width: 20%;
+    height: 100vh;
+    margin-right: 30px;
+    background-color: white;
+    position: fixed;
+   float: left;
+}
+
+.dashboardWindow{
+    width: 75%;
+    overflow: scroll;
+    display: inline-block;
+}

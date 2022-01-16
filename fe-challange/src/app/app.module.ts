@@ -8,16 +8,24 @@ import { ApiService } from './Services/api.service';
 import { ApiInterceptorService } from './Services/api-interceptor.service';
 import { UserListComponent } from './user-list/user-list.component';
 import { NotificationListComponent } from './notification-list/notification-list.component';
+import { FormsModule } from '@angular/forms';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { MessageCardComponent } from './message-card/message-card.component';
+import { ContractCardComponent } from './contract-card/contract-card.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    NotificationListComponent
+    NotificationListComponent,
+    ProductCardComponent,
+    MessageCardComponent,
+    ContractCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ApiService, 
     {

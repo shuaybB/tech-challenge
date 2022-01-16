@@ -1,4 +1,10 @@
-<h2>users: </h2>
-<li *ngFor="let user of Users" (click)="setUser(user.id)">
-  {{user.name}}
-</li>
+<div class="userContainer">
+  <h2>Select an account to sign-in </h2>
+  <div class="userList" *ngFor="let user of Users" (click)="setUser(user.id)"  >
+   <p>
+    {{user.name}}
+   </p>  
+   <!-- <button >Sign In </button> -->
+  </div>
+</div>
+

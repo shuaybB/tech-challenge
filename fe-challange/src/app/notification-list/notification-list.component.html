@@ -1,4 +1,29 @@
-<p *ngFor="let msg of Messages">{{msg.message}}</p>
-<p *ngFor="let con of Contracts">{{con.expiration_date}}</p>
-<p *ngFor="let prd of Products">{{prd.product_type}}</p>
+
+
+
+    <select *ngIf="isAdmin" [(ngModel)]="selectedCategory" >
+        <option value="0" >All</option>
+        <option value="1">Messages</option>
+        <option value="2">Contracts</option>
+        <option value="3">Products</option>
+    </select>
+    <div *ngIf="selectedCategory == 0 || selectedCategory == 1">
+    <h3>Messages</h3>
+        <app-message-card *ngFor="let msg of Messages" [Message]="msg"></app-message-card>
+        <p *ngIf="!(Messages.length > 0)">No new messages...</p>
+    </div>
+    
+    <div  *ngIf="selectedCategory == 0 || selectedCategory == 2">
+    <h3>Contracts</h3>
+        <app-contract-card *ngFor="let con of Contracts" [Contract]="con"></app-contract-card>
+        <p *ngIf="!(Contracts.length > 0)">No new contracts...</p>
+    </div>
+    
+    
+    <div  *ngIf="selectedCategory == 0 || selectedCategory == 3">
+    <h3>Products</h3>
+        <app-product-card *ngFor="let prd of Products" [Product]="prd"></app-product-card>
+        <p *ngIf="!(Products.length > 0)">No new products...</p>
+    </div>
+
 

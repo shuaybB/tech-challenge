@@ -11,8 +11,6 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-    SelectedUser: string
-
     getAuthToken(){
       return sessionStorage.getItem('token')
     }
